@@ -57,8 +57,8 @@ RUN pipenv --verbose install --deploy --system
 COPY ./docker/wait-for-it.sh /usr/local/bin/wait-for-it
 RUN chmod +x /usr/local/bin/wait-for-it
 
-COPY ./docker/app/start-api.sh /usr/local/bin/start-api
-RUN chmod +x /usr/local/bin/start-api
+#COPY ./docker/app/start-api.sh /usr/local/bin/start-api
+#RUN chmod +x /usr/local/bin/start-api
 
 COPY ./docker/app/start-django.sh /usr/local/bin/start-django
 RUN chmod +x /usr/local/bin/start-django
